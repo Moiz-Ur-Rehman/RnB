@@ -93,6 +93,9 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+.nav-mid a{
+    text-decoration: none;
+}
 .nav-right{
    text-align: right;
 }

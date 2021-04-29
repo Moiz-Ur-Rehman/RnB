@@ -70,23 +70,40 @@
     border: 1px solid rgb(70, 70, 70);
 }
 
-/* About Us */
-.about{
+/* About Us and Returns and T&C*/
+.about , .returns , .terms{
     margin-top: 120px;
     margin-bottom: 120px;
     width: 100%;
 }
-.about-wrap{
+.about-wrap , .return-wrap{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-.about-wrap h2{
+.about-wrap h2 , .return-wrap h2{
     margin-bottom: 30px;
     color: #131313;
 }
-.about-wrap p{
+.about-wrap p , .return-wrap p{
     color: #6e6e6e;
+}
+.terms-wrap p{
+    color: #6e6e6e;
+    margin-bottom: 10px;
+}
+.terms-wrap{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.terms-wrap h2{
+    margin-bottom: 20px;
+    color: #131313;
+}
+.terms-wrap h3{
+    margin-bottom: 10px;
+    color: #131313;
 }
 
 
@@ -100,7 +117,7 @@
     .wrap , .register-wrap , .contact-wrap{
         width:50%;
     }
-    .about-wrap{
+    .about-wrap , .return-wrap , .terms-wrap{
         width: 88%;
     }
 }
