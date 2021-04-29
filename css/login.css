@@ -1,0 +1,111 @@
+.login , .register , .contact{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+.wrap , .register-wrap , .contact-wrap{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrap h6 , .register-wrap h6 , .contact-wrap h6{
+    margin-bottom: 15px;
+    color: #002fa7;
+}
+.wrap h2 , .register-wrap h2 , .contact-wrap h2{
+    margin-bottom: 40px;
+}
+.all{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #6e6e6e;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    color: #131313;
+    font-weight: bold;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #131313;
+    font-weight: bold;
+    opacity: 1;
+}
+.wrap #forgot-pass{
+    color: #6e6e6e;
+    font-size: 13px;
+    text-decoration: none;
+}
+.wrap #forgot-pass:hover{
+    color: rgb(70, 70, 70);
+}
+.wrap button , .register-wrap button , .contact-wrap button{
+    border: none;
+    margin-top: 30px;
+    color: white;
+    padding: 12px 15px;
+    background-color: #131313;
+    font-weight: bold;
+    border-radius: 0px;
+}
+.wrap button:hover , .register-wrap button:hover , .contact-wrap button:hover{
+    background-color: rgb(30, 30, 30);
+}
+.line{
+    border-bottom: 3px solid black;
+    margin: 50px 0px 40px;
+}
+.wrap p , .register-wrap p , .contact-wrap p{
+    color: #6e6e6e;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.wrap #register-btn , .register-wrap #login-btn{
+    text-decoration: none;
+    color: #6e6e6e;
+    border: 1px solid #6e6e6e;
+    padding: 10px;
+    font-size: 14px;
+}
+.wrap #register-btn:hover , .register-wrap #login-btn:hover{
+    border: 1px solid rgb(70, 70, 70);
+}
+
+/* About Us */
+.about{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+.about-wrap{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-wrap h2{
+    margin-bottom: 30px;
+    color: #131313;
+}
+.about-wrap p{
+    color: #6e6e6e;
+}
+
+
+/* Responsiveness*/
+@media only screen and (max-width: 1025px) {
+    .wrap , .register-wrap , .contact-wrap{
+        width:35%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .wrap , .register-wrap , .contact-wrap{
+        width:50%;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .wrap , .register-wrap , .contact-wrap{
+        width:88%;
+    }
+    .login , .register , .contact{
+        margin-top: 150px;
+    }
+}
