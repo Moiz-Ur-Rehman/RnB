@@ -100,6 +100,9 @@
     .wrap , .register-wrap , .contact-wrap{
         width:50%;
     }
+    .about-wrap{
+        width: 88%;
+    }
 }
 @media only screen and (max-width: 510px) {
     .wrap , .register-wrap , .contact-wrap{
