@@ -21,7 +21,7 @@
     border-bottom: 1px solid #6e6e6e;
     margin-bottom: 20px;
     padding-bottom: 8px;
-    font-size: 18px;
+    font-size: 17px;
     color: #131313;
     font-weight: bold;
 }
@@ -87,13 +87,14 @@
 }
 .about-wrap p , .return-wrap p{
     color: #6e6e6e;
+    margin-bottom: 20px;
 }
 .terms-wrap p{
     color: #6e6e6e;
     margin-bottom: 10px;
 }
 .terms-wrap{
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -103,7 +104,12 @@
 }
 .terms-wrap h3{
     margin-bottom: 10px;
-    color: #131313;
+    color: #002fa7;
+}
+.terms-wrap h4{
+    margin-bottom: 10px;
+    color: #002fa7;
+    font-weight: lighter;
 }
 
 
