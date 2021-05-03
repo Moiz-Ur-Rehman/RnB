@@ -21,7 +21,7 @@
     position: fixed;
     z-index: 2;
     top: 0;
-    transition: 0.5s;
+    transition: 2s;
 }
 .menu-wrap{
     margin-left: 40px;

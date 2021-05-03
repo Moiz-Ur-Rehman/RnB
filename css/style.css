@@ -18,6 +18,17 @@
     border-radius: 10px;
 }
 
+/* ANIMATIONS */
+.animate-opacity{
+    animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+.animate-right{
+    animation:animateright 0.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}
+}
+.animate-left{
+    animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
+}
+
 /* TOP NAV BAR */
 
 .nav{
@@ -85,13 +96,15 @@
     cursor: pointer;
 }
 .nav-mid{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .nav-mid h3{
     color: #272727;
     margin: 0;
     font-weight: bold;
     letter-spacing: 2px;
+    width: fit-content;
 }
 .nav-mid a{
     text-decoration: none;
@@ -121,8 +134,7 @@
     background: rgba(255, 255, 255, 0.7);
     top: 0;
     z-index: 5;
-    transition: 0.5s;
-    display: none;
+    transform: translateX(-100%);
 }
 .menu-container{
     width: 250px;
@@ -131,7 +143,6 @@
     position: fixed;
     z-index: 2;
     top: 0;
-    transition: 0.5s;
 }
 .menu-wrap{
     margin-left: 40px;
@@ -212,6 +223,29 @@
 }
 .main-container img{
     width: 75%;
+}
+.mySlides{
+    display:none;
+}
+.main-wrap{
+    position: relative;
+}
+.paginate{
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+}
+.paginate-color{
+    background-color: black !important;
+}
+.demo{
+    background-color: #c9c9c9;
+    padding: 5px;
+    border-radius: 100px;
+    margin-right: 8px;
+    cursor: pointer;
 }
 .shop-now{
     position: absolute;
@@ -341,6 +375,9 @@ footer .footer-rights{
     .shop-now h1{
         font-size: 35px;
         margin-bottom: 15px;
+    }
+    .paginate{
+        display: none;
     }
 }
 @media only screen and (max-width: 510px) {
