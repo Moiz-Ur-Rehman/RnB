@@ -131,6 +131,9 @@
     .wrap , .register-wrap , .contact-wrap{
         width:88%;
     }
+    .about , .returns , .terms{
+        margin-top: 140px;
+    }
     .login , .register , .contact{
         margin-top: 150px;
     }
