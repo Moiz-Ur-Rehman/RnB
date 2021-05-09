@@ -47,10 +47,27 @@ body{
 .loader-wrap{
     height: 80px;
     width: 80px;
-    border: 2px solid #f3f3f3;
-    border-top: 3px solid #f25a41;
+    border-top: 3px solid lightblue;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: spin 1s infinite linear}@keyframes spin{from{transform: rotate(0deg);} to{transform: rotate(360deg);}
+}
+.loader-wrap1{
+    height: 70px;
+    width: 70px;
+    border-left: 3px solid #f25a41;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-wrap2{
+    height: 60px;
+    width: 60px;
+    border-right: 3px solid yellow;
+    border-radius: 100%;
 }
 
 /* TOP NAV BAR */
