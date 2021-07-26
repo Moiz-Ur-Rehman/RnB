@@ -11,16 +11,30 @@ function searchBar(){
 }
 function leftMenu(){
     const menu=document.querySelector('.menu')
+    const on_hover=document.querySelector('.nav-left button .on-hover')
     const menuCont=document.querySelector('.menu-container')
-    const icon=document.querySelector('.nav-left button')
+    const icon=document.querySelector('.nav-left button .menu-open')
     const menuClose=document.querySelector('.menu-close')
-    icon.addEventListener('click',function(){
+    const mClose=document.querySelector('.nav-left button .mClose')
+    icon.addEventListener('mouseenter',function(){
+      on_hover.style.display="block"
+      icon.style.display="none"
+      on_hover.addEventListener('click',function(){
+        icon.style.visibility="hidden"
+        mClose.style.visibility="visible"
         menu.style.transform="translateX(0)"
         menuCont.classList.add('animate-left')
         menuClose.addEventListener('click',function(){
+            mClose.style.visibility="hidden"
+            icon.style.visibility="visible"
             menu.style.transform="translateX(-100%)"
             menuCont.classList.remove('animate-left')
         })
+      })
+      on_hover.addEventListener('mouseleave',function(){
+        on_hover.style.display="none"
+        icon.style.display="inline-flex"
+      })
     })
 }
 leftMenu()
